@@ -3,7 +3,7 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Main from './layout/Main';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import Home from './components/Home/Home';
+import Topic from './components/Topic/Topic';
 
 function App() {
   const router = createBrowserRouter([
@@ -13,7 +13,8 @@ function App() {
       children: [
         {
           path: '/',
-          element: <Home></Home>
+          loader: () => fetch('https://openapi.programming-hero.com/api/quiz'),
+          element: <Topic></Topic>
         }
       ]
     }
