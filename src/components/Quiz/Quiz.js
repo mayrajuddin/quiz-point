@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './Quiz.css';
 import { Card, Col, } from 'react-bootstrap';
 import QuizOption from '../quizOption/QuizOption';
@@ -9,11 +9,23 @@ import toast from 'react-hot-toast';
 const Quiz = (props) => {
     const { question } = props;
     const { options, correctAnswer, } = question;
-    const [answer, setAnswer] = useState()
-    const notify = () => toast(answer)
+    const notify = (answer) => toast(answer);
+    const ans = (value) => {
+        if (value) {
+            toast.success('correct answer')
+        } else {
+            toast.error('wrong answer')
+        }
+    };
     const showAns = ans => {
-        setAnswer(ans)
-        notify()
+        notify(ans)
+    }
+    const showCorrectAns = correctAns => {
+        if (correctAns === correctAnswer) {
+            ans(true)
+        } else {
+            ans(false);
+        }
     }
     return (
         <Col sm={6}>
@@ -25,7 +37,7 @@ const Quiz = (props) => {
                     </div>
 
                     {
-                        options.map(option => <QuizOption option={option}></QuizOption>)
+                        options.map(option => <QuizOption option={option} qus={question} correctAns={showCorrectAns}></QuizOption>)
                     }
                 </Card.Body>
             </Card>
