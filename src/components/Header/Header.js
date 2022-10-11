@@ -1,13 +1,12 @@
 import React from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-
 const Header = () => {
     return (
         <div>
             <Navbar bg="dark" variant="dark" collapseOnSelect expand="lg" className='py-4'>
                 <Container>
-                    <Navbar.Brand href="home" className='fs-5 text-capitalize'>quiz </Navbar.Brand>
+                    <Navbar.Brand href="home" className='fs-5 text-capitalize'>Quiz Point </Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className='ms-auto'>

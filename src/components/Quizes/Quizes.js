@@ -1,11 +1,11 @@
-import React from 'react';
+// import React, { useState } from 'react';
 import { Container, Row } from 'react-bootstrap';
+import { Toaster } from 'react-hot-toast';
 import { useLoaderData } from 'react-router-dom';
 import Quiz from '../Quiz/Quiz';
 
 const Quizes = () => {
     const { data } = useLoaderData();
-    // console.log(data);
     const { total, questions, name } = data;
     return (
         <div>
@@ -16,6 +16,7 @@ const Quizes = () => {
                     {
                         questions.map(qus => <Quiz key={qus.id} question={qus}></Quiz>)
                     }
+                    <Toaster></Toaster>
                 </Row>
             </Container>
         </div>

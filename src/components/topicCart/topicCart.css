@@ -1,5 +1,5 @@
 .cart-btn {
-    background-color: #fff;
+    background-color: rgb(240, 240, 240);
     color: #212529;
     font-weight: 500;
     border: none;
@@ -7,4 +7,9 @@
     padding: 10px 14px;
     text-transform: capitalize;
     border-radius: 7px;
+}
+
+.cart-btn:hover {
+    background-color: lightcyan;
+    color: #212529;
 }

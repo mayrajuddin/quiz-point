@@ -4,3 +4,16 @@
     border: none;
     min-height: 380px;
 }
+
+.icon {
+    height: 26px;
+    width: 26px;
+}
+
+.show-icon {
+    color: black;
+}
+
+.show-icon:hover {
+    color: rgb(240, 240, 240);
+}
