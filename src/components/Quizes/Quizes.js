@@ -6,12 +6,11 @@ import Quiz from '../Quiz/Quiz';
 
 const Quizes = () => {
     const { data } = useLoaderData();
-    const { total, questions, name } = data;
+    const { questions, name } = data;
     return (
         <div>
             <Container>
-                <h2>total quiz {total} </h2>
-                <h3 className='text-center py-3 fs-3 text-capitalize'> quiz of {name}</h3>
+                <h3 className='text-center py-3 fs-3 text-capitalize my-3'> quiz of {name}</h3>
                 <Row className='g-4'>
                     {
                         questions.map(qus => <Quiz key={qus.id} question={qus}></Quiz>)

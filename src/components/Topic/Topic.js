@@ -12,8 +12,8 @@ const Topic = () => {
     return (
         <div className='topic'>
             <Banner></Banner>
-            <Container>
-                <h2 className='fs-2 text-uppercase py-3 tittle'> quiz Topics {data.length}</h2>
+            <Container className='mb-5'>
+                <h2 className='fs-2 text-uppercase py-3 tittle'> quiz Topics</h2>
                 <Row>
                     {
                         data.map(topic => <TopicCart key={topic.id} topic={topic}></TopicCart>)

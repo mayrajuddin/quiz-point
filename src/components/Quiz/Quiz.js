@@ -20,7 +20,7 @@ const Quiz = (props) => {
             <Card className='cart'>
                 <Card.Body>
                     <div className='d-flex justify-content-between align-items-center'>
-                        <h2 className='fs-4 text-dark'> {question.question}</h2>
+                        <h2 className='fs-5 text-dark'> {question.question}</h2>
                         <Link onClick={() => showAns(correctAnswer)} className='show-icon'> <EyeIcon className='icon'></EyeIcon></Link>
                     </div>
 
