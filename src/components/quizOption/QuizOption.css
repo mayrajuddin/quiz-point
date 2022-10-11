@@ -1,0 +1,10 @@
+.option-btn {
+    font-size: 15px;
+    display: block;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.option-btn:hover {
+    background-color: lightcyan;
+}

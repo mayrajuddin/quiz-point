@@ -1,0 +1,6 @@
+.cart {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    background-color: rgb(195, 199, 199);
+    border: none;
+    min-height: 380px;
+}
