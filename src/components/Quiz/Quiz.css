@@ -12,6 +12,7 @@
 
 .show-icon {
     color: black;
+    transition: all linear .4s;
 }
 
 .show-icon:hover {
@@ -28,4 +29,13 @@
 .option-div:hover {
     background-color: #D9AFD9;
     background-image: linear-gradient(300deg, #D9AFD9 0%, #97D9E1 69%);
+}
+
+.ans-div {
+    font-size: 17px;
+    display: block;
+    background-color: #D9AFD9;
+    background-image: linear-gradient(300deg, #D9AFD9 0%, #97D9E1 69%);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    margin-top: 8px;
 }
