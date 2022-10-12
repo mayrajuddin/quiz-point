@@ -8,7 +8,6 @@ import toast from 'react-hot-toast';
 const Quiz = (props) => {
     const { question } = props;
     const { options, correctAnswer, id } = question;
-    console.log(props);
     const [open, setOpen] = useState(false)
     const ans = (value) => {
         if (value) {

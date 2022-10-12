@@ -5,7 +5,6 @@ import './topicCart.css'
 import { ChevronDoubleRightIcon } from '@heroicons/react/24/solid';
 
 const TopicCart = ({ topic }) => {
-    console.log(topic);
     const { logo, name, id, total } = topic
     return (
         <Col xm={12} md={3} className='g-4 '>

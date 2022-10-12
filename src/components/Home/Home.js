@@ -1,12 +1,11 @@
 import React from 'react';
-import './Topic.css'
+import './Home.css'
 import { Container, Row } from 'react-bootstrap';
 import { useLoaderData } from 'react-router-dom';
 import TopicCart from '../topicCart/TopicCart';
 import Banner from '../Banner/Banner';
-// import { TrophyIcon } from '@heroicons/react/24/solid'
 
-const Topic = () => {
+const Home = () => {
     const loaderData = useLoaderData([]);
     const { data } = loaderData;
     return (
@@ -24,4 +23,4 @@ const Topic = () => {
     );
 };
 
-export default Topic;
+export default Home;
