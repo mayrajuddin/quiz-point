@@ -11,4 +11,4 @@
 * 3 Routes .
 * Giving a toast quiz is Correct or Wrong .
 * The number of questions per topic  is shown in the side section 
-* The total number of subjects is shown in a chart form in the figures
+* The total number of Topic is shown in a chart form in the figures

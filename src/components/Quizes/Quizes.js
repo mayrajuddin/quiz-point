@@ -1,4 +1,3 @@
-// import React, { useState } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import { Toaster } from 'react-hot-toast';
 import { useLoaderData } from 'react-router-dom';
@@ -24,8 +23,6 @@ const Quizes = () => {
                     <Col sm={2}>
                         <div className='count-div'>
                             <p> Total Qus : {questions.length}</p>
-                            {/* <p>Correct Ans : </p>
-                            <p>Wrong Ans : </p> */}
                         </div>
                     </Col>
                 </Row>

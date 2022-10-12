@@ -10,7 +10,7 @@ const Statistics = () => {
                 <div>
                     <h4 className='fs-3 text-center text-capitalize py-4'>Statistics Of Quiz</h4>
                 </div>
-                <div className='col-7  mx-auto py-4'>
+                <div className='col-lg-7  mx-auto py-4' xs={11} md={9}>
                     <div style={{ width: '100%', height: 400 }} >
                         <ResponsiveContainer>
                             <BarChart
