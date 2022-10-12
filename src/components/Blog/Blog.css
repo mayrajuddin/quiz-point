@@ -1,0 +1,8 @@
+.blog-card {
+    background-color: rgba(201, 225, 230, 20%);
+}
+
+.blog-card p {
+    color: #848482;
+    font-size: 17px;
+}
