@@ -7,7 +7,7 @@ const Header = () => {
         <div>
             <Navbar bg="dark" variant="dark" collapseOnSelect expand="lg" className='py-3 header'>
                 <Container>
-                    <Navbar.Brand href="home" className='fs-4 text-capitalize fw-bold text-dark'>Quiz point</Navbar.Brand>
+                    <Link to={'/'} className='fs-4 text-capitalize fw-bold text-dark text-decoration-none'>Quiz point</Link>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className='ms-auto nav-bar'>

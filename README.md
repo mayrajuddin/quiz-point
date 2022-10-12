@@ -1,10 +1,10 @@
 
-# Templete Name   Quiz point 
+# Templete Name -  Quiz point 
 
 # Live  Url Link 
-* https://mj-quiz-point.netlify.app
+## https://mj-quiz-point.netlify.app
 
-# Here are some details of this template.
+# Here are some details of this template
 * Responsive Header Menu .
 * Responsive  Cards .
 * Broken Url page .
