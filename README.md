@@ -9,7 +9,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
     * Responsive Header Menu 
     * Responsive  Cards 
     * Broken Url page 
-    * 3 Routes
+    * 3 Routes 
  -->
 
 ## Available Scripts

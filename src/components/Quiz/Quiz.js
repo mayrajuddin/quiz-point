@@ -1,7 +1,6 @@
 import React from 'react';
 import './Quiz.css';
-import { Card, Col, } from 'react-bootstrap';
-import QuizOption from '../quizOption/QuizOption';
+import { Card, Col } from 'react-bootstrap';
 import { EyeIcon } from '@heroicons/react/24/solid';
 import { Link } from 'react-router-dom';
 import toast from 'react-hot-toast';
@@ -9,7 +8,11 @@ import toast from 'react-hot-toast';
 const Quiz = (props) => {
     const { question } = props;
     const { options, correctAnswer, } = question;
+
     const notify = (answer) => toast(answer);
+    const showAns = ans => {
+        notify(ans)
+    }
     const ans = (value) => {
         if (value) {
             toast.success('correct answer')
@@ -17,9 +20,6 @@ const Quiz = (props) => {
             toast.error('wrong answer')
         }
     };
-    const showAns = ans => {
-        notify(ans)
-    }
     const showCorrectAns = correctAns => {
         if (correctAns === correctAnswer) {
             ans(true)
@@ -37,7 +37,12 @@ const Quiz = (props) => {
                     </div>
 
                     {
-                        options.map(option => <QuizOption option={option} qus={question} correctAns={showCorrectAns}></QuizOption>)
+                        options.map((option) => (
+                            <div key={option} className='option-div  border-0 my-3 rounded d-flex '>
+                                <input type="radio" id={option} value={option} className='ms-3' name="option" />
+                                <label htmlFor={option} className='p-2 py-3 col' onClick={() => showCorrectAns(option)}>{option}</label>
+                            </div>
+                        ))
                     }
                 </Card.Body>
             </Card>
